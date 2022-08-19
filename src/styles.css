@@ -1,23 +1,4 @@
-/* img.bg {
 
-    min-height: 100%;
-    min-width: 1024px;
-      
-
-    width: 100%;
-    height: auto;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-  
-  @media screen and (max-width: 1024px) { 
-    img.bg {
-      left: 50%;
-      margin-left: -512px; 
-    }
-  } */
 body{
   background: #536976;  
   background: -webkit-linear-gradient(to right, #292E49, #536976); 
