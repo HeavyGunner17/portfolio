@@ -1,0 +1,41 @@
+.skillCircles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.skillStyles {
+  flex: 0 0 25%;
+  text-align: center;
+}
+
+.container {
+  color: white;
+}
+.button-edit {
+  color: #37ff17;
+}
+
+.button-delete {
+  color: #ff2c2c;
+}
+
+.button-edit:hover{
+  color: #218512;
+}
+
+.button-delete:hover {
+  color: #811b1b;
+}
+
+.button-create{
+  color:#fff01b;
+  background-color: black;
+  border-radius: 100%;
+}
+
+.button-create:hover{
+  color:#7a7310
+}

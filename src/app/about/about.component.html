@@ -1,0 +1,29 @@
+<div class="container-fluid text-white">
+    <div class="row">
+      <div class="col-12 col-md-8">
+  
+        <div *ngIf="isLogin" style="display: flex; justify-content:space-between">
+          <h1 >Hola, mi nombre es Ana</h1>
+  
+          <span style="cursor: pointer;" (click)="openDialog()">
+            <mat-icon class="button-edit">edit</mat-icon>
+          </span>
+        </div>
+  
+        <h1 *ngIf="!isLogin">Hola, mi nombre es Ana.</h1>
+        <div *ngIf="isDataHere">
+          <p>{{about[0].descripcionUno}}</p>
+        </div>
+        <div *ngIf="isDataHere">
+          <p>{{about[0].descripcionDos}}</p>
+        </div>
+  
+      </div>
+      <div class="col-12 col-md-4 " *ngIf="isDataHere">
+        <img src= {{imgUrl.imgUrl}} alt="gatito" class="profileImg">
+        <div *ngIf="isLogin"  class="editImg mt-4">
+          <button mat-raised-button color="accent" (click)="openDialogImg()">Editar imagen <mat-icon class="button-edit">edit</mat-icon></button>
+        </div>
+      </div>
+    </div>
+  </div>

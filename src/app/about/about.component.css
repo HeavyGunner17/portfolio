@@ -1,0 +1,15 @@
+.button-edit {
+    color: #37ff17;
+  }
+  
+  .button-edit:hover {
+    color: #218512;
+  }
+  .profileImg {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.308);
+  }

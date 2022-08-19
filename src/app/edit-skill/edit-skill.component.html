@@ -1,0 +1,21 @@
+<div class="container-fluid" align="center">
+
+    <div>
+      <h1>Editar registro</h1>
+      <form [formGroup]='editSkillForm' (ngSubmit)="editSkill()">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Ingrese Habilidad</mat-label>
+          <input matInput placeholder="Skill" formControlName="skill">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Ingrese Valor</mat-label>
+          <input matInput placeholder="Valor" formControlName="valor">
+        </mat-form-field>
+
+
+        <button mat-raised-button color="primary">Editar</button>
+
+      </form>
+    </div>
+  </div>

@@ -1,0 +1,44 @@
+
+    <div *ngIf="!isLogin" class="container-fluid  text-white">
+        <h1>Experiencia</h1>
+            <div *ngFor="let exp of experience">
+                <h2> {{exp.titulo}}</h2>
+                <ul>
+                    <li>
+                        <p>{{exp.trabajo}}</p>
+                    </li>
+                    <li>
+                        <p>{{exp.tiempo}}</p>
+                    </li>
+                    <li>
+                        <p>{{exp.descripcion}}</p>
+                    </li>
+                </ul>
+    
+            </div>
+    </div>
+    
+    <div *ngIf="isLogin" class="container-fluid ">
+        <div style="display:flex; justify-content: space-between;">
+            <h1>Experiencia</h1>
+            <span style="cursor: pointer;" (click)="createExperience()">
+                <mat-icon class="button-create">add_circle</mat-icon>
+            </span>
+        </div>
+        <div *ngFor="let exp of experience">
+            <div style="display:flex; justify-content: space-between;">
+                <h2> {{exp.titulo}}</h2>
+                <div>
+                    <span style="cursor: pointer;" (click)="openDialog(exp.id)">
+                        <mat-icon class="button-edit">edit</mat-icon>
+                    </span>
+                    <span style="cursor: pointer;" (click)="deleteFunction(exp.id)">
+                        <mat-icon class="button-delete">delete</mat-icon>
+                    </span>
+                </div>
+            </div>
+            <p>{{exp.trabajo}}</p>
+            <p>{{exp.tiempo}}</p>
+            <p>{{exp.descripcion}}</p>
+        </div>
+    </div>

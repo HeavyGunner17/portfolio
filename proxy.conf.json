@@ -1,0 +1,7 @@
+{
+    "/api/*":{
+        "target":"https://rocky-reaches-27641.herokuapp.com",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

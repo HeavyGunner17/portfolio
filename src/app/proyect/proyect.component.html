@@ -1,0 +1,33 @@
+<div *ngIf="!isLogin" class="container-fluid  text-white">
+    <h1>Proyectos</h1>
+    <div *ngFor="let proyecto of proyectos">
+        <h2>{{proyecto.titulo}}</h2>
+        <p>{{proyecto.descripcion}}</p>
+        <button mat-raised-button color="accent">Ver Proyecto</button>
+    </div>
+</div>
+
+<div *ngIf="isLogin" class="container-fluid ">
+    <div style="display:flex; justify-content: space-between;">
+        <h1>Proyectos</h1>
+        <span style="cursor: pointer;" (click)="createProyecto()">
+            <mat-icon class="button-create">add_circle</mat-icon>
+        </span>
+        </div>
+    <div *ngFor="let proyecto of proyectos">
+        <div style="display:flex; justify-content: space-between;">
+            <h2>{{proyecto.titulo}}</h2>
+            <div>
+                <span style="cursor: pointer;" (click)="openDialog(proyecto.id)">
+                    <mat-icon class="button-edit">edit</mat-icon>
+                </span>
+                <span style="cursor: pointer;" (click)="deleteFunction(proyecto.id)">
+                    <mat-icon class="button-delete">delete</mat-icon>
+                </span>
+            </div>
+        </div>
+
+        <p>{{proyecto.descripcion}}</p>
+        <button mat-raised-button color="accent">Ver Proyecto</button>
+    </div>
+</div>

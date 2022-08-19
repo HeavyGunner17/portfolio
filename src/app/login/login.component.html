@@ -1,0 +1,22 @@
+<div class="container-fluid " align="center">
+  <h1>Inicia sesión</h1>
+
+  <div>
+    <form [formGroup]='loginForm' (ngSubmit)="continueLogin()">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Ingrese Usuario</mat-label>
+        <input matInput placeholder="Usuario" formControlName="username">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Ingrese Contraseña</mat-label>
+        <input type="password" matInput placeholder="Contraseña" (click)="continueLogin()" formControlName="password">
+      </mat-form-field>
+
+
+      <button mat-raised-button color="primary">Ingresar</button>
+      <button mat-raised-button color="warn" (click)="closeModal()">Cerrar</button>
+
+    </form>
+  </div>
+  </div>

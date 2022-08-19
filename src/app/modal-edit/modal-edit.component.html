@@ -1,0 +1,32 @@
+<div class="container-fluid " align="center">
+
+    <div>
+      <mat-card>
+        <h1>Editar registro</h1>
+        <form [formGroup]='editForm' (ngSubmit)="editExperience()">
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Ingrese trabajo</mat-label>
+            <input matInput placeholder="Trabajo" formControlName="trabajo">
+          </mat-form-field>
+  
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Ingrese titulo</mat-label>
+            <input matInput placeholder="Titulo"  formControlName="titulo">
+          </mat-form-field>
+  
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Ingrese tiempo</mat-label>
+            <input matInput placeholder="Tiempo" formControlName="tiempo">
+          </mat-form-field>
+  
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Ingrese descripcion de actividad</mat-label>
+            <input matInput placeholder="Descripcion" formControlName="descripcion">
+          </mat-form-field>
+  
+          <button mat-raised-button color="primary">Editar</button>
+  
+        </form>
+      </mat-card> 
+    </div>
+  </div>

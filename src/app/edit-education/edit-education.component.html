@@ -1,0 +1,30 @@
+<div class="container-fluid" align="center">
+
+    <div>
+      <h1>Editar registro</h1>
+      <form [formGroup]='editEduForm' (ngSubmit)="editEducacion()">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Ingrese institucion</mat-label>
+          <input matInput placeholder="institucion" formControlName="institucion">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Ingrese titulo</mat-label>
+          <input matInput placeholder="Titulo" formControlName="titulo">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Ingrese tiempo</mat-label>
+          <input matInput placeholder="Tiempo" formControlName="tiempo">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Ingrese fecha de inicio</mat-label>
+          <input matInput placeholder="inicio" formControlName="inicio">
+        </mat-form-field>
+
+        <button mat-raised-button color="primary">Editar</button>
+
+      </form>
+    </div>
+  </div>

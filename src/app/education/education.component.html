@@ -1,0 +1,41 @@
+<div *ngIf="!isLogin" class="container-fluid text-white">
+    <h1>Educacion</h1>
+    <div *ngFor="let edu of educacion">
+        <ul>
+            <li>
+                <h1>{{edu.titulo}}</h1>
+            </li>
+            <p>La duración del cursado fue de: {{edu.tiempo}}</p>
+            <p>El cursado se realizó en: {{edu.institucion}} en el año {{edu.inicio}}</p>
+        </ul>
+    </div>
+</div>
+
+<div *ngIf="isLogin" class="container-fluid">
+    <div style="display:flex; justify-content: space-between;">
+        <h1>Educacion</h1>
+        <span style="cursor: pointer;" (click)="createEducation()">
+            <mat-icon class="button-create">add_circle</mat-icon>
+        </span>
+    </div>
+    <div *ngFor="let edu of educacion">
+        <div style="display:flex; justify-content: space-between;">
+            <ul>
+                <li>
+                    <h1>{{edu.titulo}}</h1>
+                </li>
+            </ul>
+            <div>
+                <span style="cursor: pointer;" (click)="openDialog(edu.id)">
+                    <mat-icon class="button-edit">edit</mat-icon>
+                </span>
+                <span style="cursor: pointer;" (click)="deleteFunction(edu.id)">
+                    <mat-icon class="button-delete">delete</mat-icon>
+                </span>
+            </div>
+        </div>
+        <p>La duración del cursado fue de: {{edu.tiempo}}</p>
+        <p>El cursado se realizó en: {{edu.institucion}} en el año {{edu.inicio}}</p>
+
+    </div>
+</div>

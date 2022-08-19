@@ -1,0 +1,22 @@
+.button-edit {
+    color: #37ff17;
+  }
+  
+  .button-delete {
+    color: #ff2c2c;
+  }
+  
+  .button-edit:hover{
+    color: #218512;
+  }
+  .button-delete:hover {
+    color: #811b1b;
+  }
+  .button-create{
+    color:#fff01b;
+    background-color: black;
+    border-radius: 100%;
+  }
+  .button-create:hover{
+    color:#7a7310
+  }

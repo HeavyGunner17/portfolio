@@ -1,0 +1,14 @@
+<div class="container-fluid" align="center">
+
+    <div>
+        <h1>Editar registro</h1>
+        <form [formGroup]='editImgForm' (ngSubmit)="editSkill()">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Ingrese url de imagen</mat-label>
+                <input matInput placeholder="primera descripcion" formControlName="img">
+            </mat-form-field>
+
+            <button mat-raised-button color="primary">Editar</button>
+        </form>
+    </div>
+</div>
